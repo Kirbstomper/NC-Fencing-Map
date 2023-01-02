@@ -27,6 +27,8 @@ dependencies {
 	testImplementation 'io.projectreactor:reactor-test'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation 'com.google.maps:google-maps-services:2.1.2'
+    implementation 'org.slf4j:slf4j-simple:1.7.25'
 
 }
 
