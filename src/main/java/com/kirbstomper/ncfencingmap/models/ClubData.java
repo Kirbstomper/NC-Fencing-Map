@@ -1,8 +1,9 @@
-package com.kirbstomper.ncfencingmap;
+package com.kirbstomper.ncfencingmap.models;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import com.google.maps.model.LatLng;
+import com.kirbstomper.ncfencingmap.dto.ClubDataDTO;
 
 import lombok.Builder;
 import lombok.Data;
@@ -20,8 +21,8 @@ public class ClubData {
     String address;
     LatLng position;
 
-    public ClubDTO mapToClubDTO(){
-        return ClubDTO.builder()
+    public ClubDataDTO mapToClubDTO(){
+        return ClubDataDTO.builder()
         .code(code)
         .name(name)
         .website(website)

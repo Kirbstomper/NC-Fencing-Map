@@ -1,8 +1,10 @@
-package com.kirbstomper.ncfencingmap;
+package com.kirbstomper.ncfencingmap.dto;
 
 import java.util.List;
 
 import com.google.maps.model.LatLng;
+import com.kirbstomper.ncfencingmap.GeoCoder;
+import com.kirbstomper.ncfencingmap.models.EventData;
 
 import lombok.Builder;
 

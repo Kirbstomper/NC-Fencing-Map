@@ -1,11 +1,12 @@
-package com.kirbstomper.ncfencingmap;
+package com.kirbstomper.ncfencingmap.dto;
 
 import com.google.maps.model.LatLng;
+import com.kirbstomper.ncfencingmap.models.ClubData;
 
 import lombok.Builder;
 
 @Builder
-public record ClubDTO(String code,
+public record ClubDataDTO(String code,
         String name,
         String website,
         String address,
