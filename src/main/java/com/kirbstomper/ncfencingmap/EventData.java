@@ -15,15 +15,20 @@ import lombok.Data;
 @Builder
 public class EventData {
     @Id
-    String eventID;
+    String eventId;
     String eventName;
     List<String> clubs;
     String address;
     LatLng location;
 
+    public EventDataDTO mapToDTO() {
 
-    public EventDataDTO mapToDTO(){
-
-        return new EventDataDTO(eventID, eventName, clubs, address, location);
+        return EventDataDTO.builder()
+                .eventId(eventId)
+                .eventName(eventName)
+                .address(address)
+                .clubs(clubs)
+                .location(location)
+                .build();
     }
 }
