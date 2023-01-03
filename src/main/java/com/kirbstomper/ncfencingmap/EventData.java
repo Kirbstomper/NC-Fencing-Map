@@ -5,6 +5,8 @@ import java.util.List;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import com.google.maps.model.LatLng;
+
 import lombok.Builder;
 import lombok.Data;
 
@@ -17,10 +19,11 @@ public class EventData {
     String eventName;
     List<String> clubs;
     String address;
+    LatLng location;
 
 
     public EventDataDTO mapToDTO(){
 
-        return new EventDataDTO(eventID, eventName, clubs, address);
+        return new EventDataDTO(eventID, eventName, clubs, address, location);
     }
 }
