@@ -1,6 +1,7 @@
 package com.kirbstomper.ncfencingmap.dto;
 
 import com.google.maps.model.LatLng;
+import com.kirbstomper.ncfencingmap.GeoCoder;
 import com.kirbstomper.ncfencingmap.models.ClubData;
 
 import lombok.Builder;
@@ -18,7 +19,7 @@ public record ClubDataDTO(String code,
                 .name(name)
                 .website(website)
                 .address(address)
-                .position(position)
+                .position(GeoCoder.getBestLocation(address))
                 .build();
     }
 
