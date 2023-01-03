@@ -17,7 +17,7 @@ import reactor.core.publisher.Mono;
 
 @Slf4j
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/events")
 public class FencingDataController {
     @Autowired
     EventDataRepository eventDataRepository;

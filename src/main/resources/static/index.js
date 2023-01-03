@@ -7,7 +7,7 @@ function initMap() {
       center: NC,
     });
 
-    fetch('/api/getEvents')
+    fetch('/api/events/getEvents')
     .then((response) => response.json())
     .then((data) => data.forEach(element => {
         console.log(element)
