@@ -10,5 +10,4 @@ public class NcFencingMapApplication{
 	public static void main(String[] args) {
 		SpringApplication.run(NcFencingMapApplication.class, args);
 	}
-
 }
