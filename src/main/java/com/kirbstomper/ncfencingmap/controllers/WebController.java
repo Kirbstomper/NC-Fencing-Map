@@ -10,7 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 @Controller("WebController")
 @Slf4j
 public class WebController {
-    @Value("${GOOGLE_MAPS_API_KEY}")
+    @Value("${GOOGLE_MAPS_API_KEY:'maps_api_key'}")
     private String googleMapsApiKey = "Pain";
 
     @RequestMapping(value = "/index")
