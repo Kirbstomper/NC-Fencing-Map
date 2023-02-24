@@ -1,5 +1,7 @@
 package com.kirbstomper.ncfencingmap.models;
 
+import java.util.List;
+
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import com.google.maps.model.LatLng;
@@ -19,6 +21,7 @@ public class ClubData {
     String name;
     String website;
     String address;
+    List<String> fencers;
     LatLng position;
 
     public ClubDataDTO mapToClubDTO(){
